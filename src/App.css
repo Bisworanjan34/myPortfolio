@@ -32,10 +32,7 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-.app{
-background-color:black;
 
-}
 .card {
   padding: 2em;
 }
@@ -43,3 +40,23 @@ background-color:black;
 .read-the-docs {
   color: #888;
 } */
+
+.app{
+  /* background-color: black; */
+  background-image: url(./assets/img-4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.app::after{
+  content: "";
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.605);
+}
