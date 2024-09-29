@@ -18,6 +18,7 @@ function App() {
 
   return (
     <>
+     <div className='app'>
      <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
@@ -32,7 +33,7 @@ function App() {
         <Route path='education' element={<Education/>}/>
       </Route>
     </Routes>
-     
+     </div>
 
     </>
   )
